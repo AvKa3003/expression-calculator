@@ -4,7 +4,9 @@ function eval() {
 }
 
 function devision(expr, char) {
-    if (+expr.slice(char + 1) == 0) throw 'Division by zero.';
+    // if (+expr.slice(char + 1) == 0) {
+    //     throw new TypeError('Division by zero.');
+    // };
     return +expr.slice(0, char) / (+expr.slice(char + 1));
 }
 
